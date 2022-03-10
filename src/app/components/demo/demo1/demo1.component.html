@@ -1,0 +1,4 @@
+<p>Statut de connexion : {{status}}</p>
+
+<button nbButton status="success" (click)="login()" *ngIf="!status">Se connecter</button>
+<button nbButton status="danger" (click)="logout()" *ngIf="status">Se déconnecter</button>

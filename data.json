@@ -1,0 +1,34 @@
+{
+  "article": [
+    {
+      "id": 1,
+      "nom": "RTX 3090TI",
+      "prix": 17,
+      "description": "C'est trop cher"
+    },
+    {
+      "id": 2,
+      "nom": "Porshe",
+      "prix": 42,
+      "description": "C'est trop cher"
+    },
+    {
+      "id": 3,
+      "nom": "Abricot",
+      "prix": 1,
+      "description": "C'est pas la saison"
+    },
+    {
+      "nom": "nouvel article",
+      "prix": 42,
+      "description": "on test le post",
+      "id": 4
+    },
+    {
+      "nom": "test reload liste",
+      "prix": 42,
+      "description": "on test le post",
+      "id": 5
+    }
+  ]
+}
