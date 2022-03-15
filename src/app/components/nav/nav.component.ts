@@ -39,7 +39,8 @@ export class NavComponent implements OnInit, OnDestroy {
         {title : 'HttpClient',
            url : 'demo/demo2',
            icon : 'book'
-        }
+        },
+        {title : 'Pokedex', url : 'pokedex'}
         ]
       }
     ]

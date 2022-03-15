@@ -1,0 +1,14 @@
+<nb-card *ngIf="pokelist">
+    <nb-card-header>Liste des pokémons</nb-card-header>
+    <nb-card-body>
+        <nb-list>
+            <nb-list-item *ngFor="let p of pokelist.results">
+                <label style="cursor: pointer;" (click)="openDetail(p.url)">{{p.name}}</label>
+            </nb-list-item>
+        </nb-list>
+    </nb-card-body>
+    <nb-card-footer>
+        <button nbButton size="tiny" (click)="previous()" [disabled]="!pokelist.previous">Précédent</button> 
+        <button nbButton size="tiny" (click)="next()" [disabled]="!pokelist.next">Suivant</button> 
+    </nb-card-footer>
+</nb-card>

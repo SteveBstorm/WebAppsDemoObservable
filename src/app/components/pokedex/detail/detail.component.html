@@ -1,0 +1,32 @@
+<nb-card *ngIf="currentPokemon" status="info">
+    <nb-card-header>
+        {{currentPokemon.name}}
+    </nb-card-header>
+    <nb-card-body>       
+      <nb-card>
+        <nb-card-header>
+            Info
+        </nb-card-header>
+        <nb-card-body>
+            <p> Poids : {{currentPokemon.weight}}</p>
+            <p> Taille : {{currentPokemon.height}}</p>
+                
+        </nb-card-body>
+        </nb-card>
+    
+        <nb-card>
+            <nb-card-header>
+            Images
+        </nb-card-header>
+        <nb-card-body>
+            <img [src]="currentPokemon.sprites.front_default" />
+            <img [src]="currentPokemon.sprites.back_default" />
+        </nb-card-body>
+    </nb-card>
+
+
+    </nb-card-body>
+    <nb-card-footer>
+        <button nbButton (click)="close()">Fermer</button>
+    </nb-card-footer>
+</nb-card>
